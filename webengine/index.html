@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8"><!--Declare charset so funny error text will op up :V-->
+
+<!--uses css3 (Probably can be done with previous css, but I'm lazy -- also if you don't have css3 then you're probably not going to have <canvas> :pp)-->
+<link rel="stylesheet" href="resources/css/scorch.css"/>
+
+<script type="text/javascript"><!--Create variables needed BEFORE script loading-->
+var allowContextMenu = false;
+function allowContextMenuCheck(){
+/*if(allowContextMenu){//disable as soon as it is called
+allowContextMenu=false;
+return true;
+}else*/
+return allowContextMenu;
+}
+</script>
+
+<title>
+CanvasX
+</title>
+</head>
+<body>
+
+<div id="solidbckground">
+<canvas id="canvas" oncontextmenu="return allowContextMenuCheck();" <!--width="100%" height="100%"--> >
+(╯°□°）╯︵ ┻━┻
+Welp. You don't have canvas on your browser :'V
+¯\_(ツ)_/¯
+</canvas>
+</div>
+
+<!--Scrips to only be added and ran once initially--><!---->
+<!--Drawing Scripts-->
+<script type="text/javascript" src="resources/graphics/draw.js"></script><!--Creates graphics variables and functions-->
+<script type="text/javascript" src="resources/graphics/imgs.js"></script><!--Added graphics functions-->
+<!--ContextSpecificDrawing-->
+<script type="text/javascript" src="resources/graphics/contextdraw.js"></script><!--Adds context supplied graphics functions-->
+<script type="text/javascript" src="resources/graphics/contextimgs.js"></script><!--Adds context supplied image functions-->
+
+<!--User Interaction scripts-->
+<script type="text/javascript" src="resources/action/listen.js"></script><!--Adds MouseListener, and Resize Listener-->
+
+
+<!--Load up debugging tools-->
+<script type="text/javascript" src="debug.js"></script>
+<!--Needs to be last to allow all other scritps to load and compile-->
+<script type="text/javascript" src="boot.js"></script>
+
+</body>
+</html>

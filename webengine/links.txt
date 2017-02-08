@@ -1,0 +1,16 @@
+Clipping
+========
+http://www.html5canvastutorials.com/advanced/html5-canvas-clipping-region-tutorial/
+**https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/clip
+
+
+Math
+====
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math
+
+
+Canvas Buffering****
+================
+http://stackoverflow.com/questions/6608996/is-it-possible-to-create-an-html-canvas-without-a-dom-element
+****https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/putImageData
+****PREVENT FLICKERING - damages eyes

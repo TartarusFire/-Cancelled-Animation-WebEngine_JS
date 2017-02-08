@@ -1,0 +1,46 @@
+/*html{
+	width:100%;
+	height:100%;
+	/*border: 1px black solid;* /
+}*/
+
+/* This is literally called this because it strips away all the padding and such on the canvas and webpage body :L -2/4/16 1:46am (timestamp for no reason, lol -- crack notes)*/
+
+body{
+	overflow: hidden;
+	width:100vw;
+	height:100vh;
+	padding:0;
+	margin:0;
+	/*position:absolute;
+	padding: 0;
+	margin:0;
+	width: 100vw; height: 100vh;
+	background-size:cover;
+	border: 1px black solid;*/
+}
+#canvas{
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width:100vw;
+	height:100vh;
+	/*width:100%;
+	height:100%;
+	border: 1px black solid;
+	padding: 0;
+	margin:0;
+	background-size:cover;*/
+}
+#solidbckground {
+	/*background-color:rgb(20, 20, 20); Buggy with Firefox*/
+	background-color:#303030;/*medium-dark gray -- 16+7+16*/
+	/*color:#0F0F0F;*/
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width:100vw;
+	height:100vh;
+}
