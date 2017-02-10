@@ -13,6 +13,7 @@ try{
 	ctx=buffer.getContext("2d");
 }catch(e){
 	//reset context here if the buffer fails -- worse case scenario
+	allowContextMenu=true;
 	ctx=canvas.getContext("2d");
 }//draws drectly to window buffer in worse case scenario
 
@@ -29,10 +30,16 @@ function saveClippingBoundaries(){
 
 function setClippingBoundaries(x,y,width,height){
 	ctx.rect(x,y,width,height);
+	ctx.clip();
 }
 
 function restoreClippingBoundaries(){
 	ctx.restore();
+}
+
+function resetClippingBoundaries(){
+	ctx.rect(0,0,buffer.width,buffer.height);
+	ctx.clip();
 }
 
 function getWidth(){
